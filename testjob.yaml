@@ -1,0 +1,66 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: example-job
+  namespace: demo
+spec:
+  parallelism: 50
+  template:
+    metadata:
+      name: example-job
+    spec:
+      containers:
+        - image: artifactstest.azurecr.io/2sigs100subjects:1
+          name: test-things
+      restartPolicy: OnFailure
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: example-job2
+  namespace: demo
+spec:
+  parallelism: 50
+  template:
+    metadata:
+      name: example-job2
+    spec:
+      containers:
+        - image: artifactstest.azurecr.io/2sigs100subjects:1
+          name: test-things
+      restartPolicy: OnFailure
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: example-job3
+  namespace: demo
+spec:
+  parallelism: 50
+  template:
+    metadata:
+      name: example-job3
+    spec:
+      containers:
+        - image: artifactstest.azurecr.io/2sigs100subjects:3
+          name: test-things
+      restartPolicy: OnFailure
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: example-job4
+  namespace: demo
+spec:
+  parallelism: 50
+  template:
+    metadata:
+      name: example-job4
+    spec:
+      containers:
+        - image: artifactstest.azurecr.io/2sigs100subjects:4
+          name: test-things
+      restartPolicy: OnFailure

@@ -1,0 +1,723 @@
+time="2023-01-23T19:00:31Z" level=info msg="Setting log level to debug"
+time="2023-01-23T19:00:31Z" level=info msg="starting crd manager"
+time="2023-01-23T19:00:31Z" level=info msg="initializing executor with config file at default config path"
+time="2023-01-23T19:00:31Z" level=info msg="selected auth provider: azureWorkloadIdentity"
+time="2023-01-23T19:00:31Z" level=info msg="stores successfully created. number of stores 1"
+time="2023-01-23T19:00:31Z" level=info msg="defaultPluginPath set to /.ratify/plugins"
+time="2023-01-23T19:00:31Z" level=info msg="verifiers successfully created. number of verifiers 1"
+time="2023-01-23T19:00:31Z" level=info msg="selected policy provider: configPolicy"
+time="2023-01-23T19:00:31Z" level=info msg="policies successfully created."
+time="2023-01-23T19:00:31Z" level=info msg="starting server at:6001"
+time="2023-01-23T19:00:31Z" level=info msg="starting server using TLS: [certFile:/usr/local/tls/tls.crt] [keyFile:/usr/local/tls/tls.key]"
+1.674500432158459e+09	INFO	controller-runtime.metrics	Metrics server is starting to listen	{"addr": ":8080"}
+time="2023-01-23T19:00:32Z" level=info msg="starting manager" name=setup
+1.67450043215916e+09	INFO	Starting server	{"path": "/metrics", "kind": "metrics", "addr": "[::]:8080"}
+1.6745004321591797e+09	INFO	Starting server	{"kind": "health probe", "addr": "[::]:8081"}
+1.6745004321594436e+09	INFO	Starting EventSource	{"controller": "store", "controllerGroup": "config.ratify.deislabs.io", "controllerKind": "Store", "source": "kind source: *v1alpha1.Store"}
+1.6745004321595001e+09	INFO	Starting Controller	{"controller": "store", "controllerGroup": "config.ratify.deislabs.io", "controllerKind": "Store"}
+1.6745004321593344e+09	INFO	Starting EventSource	{"controller": "verifier", "controllerGroup": "config.ratify.deislabs.io", "controllerKind": "Verifier", "source": "kind source: *v1alpha1.Verifier"}
+1.6745004321596217e+09	INFO	Starting Controller	{"controller": "verifier", "controllerGroup": "config.ratify.deislabs.io", "controllerKind": "Verifier"}
+1.674500432260957e+09	INFO	Starting workers	{"controller": "store", "controllerGroup": "config.ratify.deislabs.io", "controllerKind": "Store", "worker count": 1}
+1.6745004322610838e+09	INFO	Starting workers	{"controller": "verifier", "controllerGroup": "config.ratify.deislabs.io", "controllerKind": "Verifier", "worker count": 1}
+time="2023-01-23T19:00:32Z" level=info msg="reconciling verifier 'verifier-notary'"
+time="2023-01-23T19:00:32Z" level=info msg="Address was empty, setting to default path: /.ratify/plugins"
+time="2023-01-23T19:00:32Z" level=info msg="verifier 'notaryv2' added to verifier map"
+time="2023-01-23T19:00:32Z" level=info msg="reconciling store 'store-oras'"
+time="2023-01-23T19:00:32Z" level=info msg="Address was empty, setting to default path /.ratify/plugins"
+time="2023-01-23T19:00:33Z" level=info msg="selected auth provider: azureWorkloadIdentity"
+time="2023-01-23T19:00:33Z" level=info msg="store 'oras' added to store map"
+time="2023-01-23T19:02:21Z" level=info msg="received request POST /ratify/gatekeeper/v1/mutate "
+time="2023-01-23T19:02:21Z" level=info msg="start request POST /ratify/gatekeeper/v1/mutate"
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:9"
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:1"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:9. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:1. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:10"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:10. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:2"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:2. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:5"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:5. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:3"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:3. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:6"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:6. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:8"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:8. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:4"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:4. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects:7"
+time="2023-01-23T19:02:21Z" level=debug msg="no digest provided for reference ratifywustest.azurecr.io/resource-1-5sigs100subjects:7. attempting to resolve..."
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/5"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/4"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/8"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/2"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/9"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/6"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/1"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/7"
+time="2023-01-23T19:02:21Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/3"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/10"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/4"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/6"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/1"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/8"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/9"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/7"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/3"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/5"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/10"
+time="2023-01-23T19:02:22Z" level=debug msg="performing request method HEAD url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/2"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:7: 1087ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:10: 1112ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:2: 1164ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:4: 1171ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:9: 1178ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:1: 1179ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:3: 1187ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:8: 1203ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:6: 1263ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects:5: 1415ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for request: 1416ms"
+time="2023-01-23T19:02:22Z" level=info msg="received request POST /ratify/gatekeeper/v1/mutate "
+time="2023-01-23T19:02:22Z" level=info msg="start request POST /ratify/gatekeeper/v1/mutate"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080: 0ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for request: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="received request POST /ratify/gatekeeper/v1/mutate "
+time="2023-01-23T19:02:22Z" level=info msg="start request POST /ratify/gatekeeper/v1/mutate"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474: 0ms"
+time="2023-01-23T19:02:22Z" level=info msg="mutating image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080: 0ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba: 0ms"
+time="2023-01-23T19:02:22Z" level=debug msg="mutation: execution time for request: 1ms"
+time="2023-01-23T19:02:22Z" level=info msg="received request POST /ratify/gatekeeper/v1/verify "
+time="2023-01-23T19:02:22Z" level=info msg="start request POST /ratify/gatekeeper/v1/verify"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65"
+time="2023-01-23T19:02:22Z" level=info msg="verifying subject ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080"
+time="2023-01-23T19:02:22Z" level=info msg="Resolve of the image completed successfully the digest is sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:d33f819459e0ced211d6f04f8e94950234c5e3ee748d21bc5f6f9b31dddc3474"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:a1a18de9ad5dec45c1cf831fca3a51ec654698fed5da4677e1c8412bb1ae73a7"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:429f09abc14bde193a62e9031b6c009b2c8cb631578ccabdba476030a04c7957"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:3dedf250dced20e2ed0f2c7727e43bb82fcd88e071be03cb3703f8711707d01a"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:1ca839173c7b48cf0dc57a5f083ac5d2f94bc3cb229ce509b20e7702aad0ee84"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:ee0e341f498ddb7a2a7baf763f11761c178f2ccaa090abca5912b25f878e9f47"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:3afa6afcc08f64c98963d4dec4475d1a507f69e5ae4402c941a3022c89c5fdb1"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:7336696548a08d7bbf5c1de51cfd1fdccbb2ab2e0d7b6e70d09fea0394dec51d"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:c0f785a2f8e19f0dec7b1eadd496b5e1aa98d7bc8ff9a30845198d2262fc3ab6"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:fda96b465c39d2100c04b71bb3270977ab8c58666ca4bc53e8fa1f797f8f3d22"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:c680cd3f24c975249fc200752750df4bf23bbf70a182b8a244f7fa10e7b21d22"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:c979a6c1e94dd31b12467ae0f822d244512bfec757e9408dfa87ccf54f60367c"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:628733764bbdbb07e6d692ecfc6194a2ccf810faf3cc89b57a1c87d7635de79d"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:de15c985a4889a88bff6b444f02be205f475077fe1fee49a1191354bce74aa08"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:216eafbe890c4452b134d105f153f8254f70ae91f613de8e4432e0deddb43bc4"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:4f692ff2ed21d362de0db58a9269d25754c2126841591c8591acaad8dcfb9255"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:db4bd528397398c3e7bf513fdd06c782a96a3b8aa0ae47044e8022ab6b1ab91e"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:ab9c5cd9a9c8dc676b1d1af5008ef490946ef4b9da8b0c8360ab77a7136fc535"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:228663ea4a479d1250d620a399b3b0a42041c7f40d49c70c884534226e412e30"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:980bd31b8f64e524870d31461be146599dbe592f222dd200679298a08bee9578"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:7dae4759ecf1b1fde22a54616dc88aae8bda9e1b99b4300928bc89ac23ff13e7"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:a59bc7269b358b83aa4b5ce33a10ad01601ca128df0b9ebcc8306ff35201b8cb"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/oauth2/token?scope=repository%3Aresource-1-5sigs100subjects%3Apull&service=ratifywustest.azurecr.io"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:b7e309f9adff54a208cf0a69b403d56495226607612623a3dc15d65eef00ee67"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:95f1a0fa70122d197ad04bc22d98d78562d2566ba3a58684dd87ed0e8eb71f65"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:d42d7a1bd7555cbb4896b985a18a993fa1888487db65f083fae16cb59c54fd1d"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:43813e33783dcd07b4a8a476756ba2792fc9ca3580928ab219512407b78ac8f3"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:49a375f4b185a3924e8e74c30d8b40e13ce73834b45d7fa69a4a8d02b175a42d"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:e1fc3ca807af4a0bde6a2a51bfbad900c58ab777539ad9da80f616b292936ce7"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:02cdcb757ac88784e73bcdb2501b9a4068f128e12744c2bcba401d4079dab979"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/referrers/sha256:873e7914a3a2f2921a10ab4ebbf9221d3a4d494664a29f5bc20403062a5ace9e"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:03e402d40f1d8f2ffdf867757eaa1406437f9aaf3acaf6b598fdc05b5cab35af"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:e5e3ae1650745880043f16fbc9f718ea3dbb5ccbdc8af97c9f06172043e8dfac"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:9e5b5730cc115b0e4f621cf9ca106c24a3c9196c8a1ad9f1c10009b7d6bfcbd2"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:f909af040ec0cb5785e3c0d92d443ccb5425d88d604d611aca9f5a9750ed20be"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:e185870665c8c087e4c0ffc12709b4f4e2acf2526c01e849c42d49020eb7ae65"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:01b92b93dec491c4b5a9e23bc60050c48ca5319887546b5ee1ea201263728cad"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:874c7c8180b2a4c86d44c717c1ff259b30228f332971c51ffe9154e923adb876"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:0613f313711b35440c80338c48cc01668d090926f739cf9245fdd258167cf4e2"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:351ee68da3181545876ec3d78000ae9251e96cf1842d7e4d9422112ccc5f71f4"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:0551ad61d34015a839691affca8bcd74001db40201bef402a77f7d6ab6fb98b7"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:15542fe099f3025b77d10206d14a57c857438b59496242abcdc58e932e927c73"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:ba32790bd335be4abfe77eeb8747f9fa43415a190c497b35f68b85da889647ed"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:505c016ff64b3d42642df4a7f90edbe371d70587c9ea15ff3db36c8bfae7a672"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:83d05f52ff9886626dce7d993c6013cd3c311ba02a966c9e40736d9773363356"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:24b8f04f3f17a655b2f14599b8b1b79a24952b98374c80430787a4c6e7184e6b"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:76d758e5448c711bf67648306cefd69f7816791e3ffb64c948b1ec96393cb8a1"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:7545cc0da1427967bf141f85f291ed8076f589c97c2da30cc1849ac39793e1e6"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:dc42605225e3562f8c4c467087fe48c49ebe6fdb8f2da4cb407be728ee7a3f1d"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:c3b91507626c441e805f3e3c07cd3cb39815873f97e558bf3a65d60eb5bbff2f"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:0b658138e4d3aeb4d5ecb5a94191b897476f0cfb8d4242345c80e1525eb4d314"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:0062899a642e40b81e06528f63ed3c3a88112e13beedf3fee646ed7ecca85d27"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:f5d3479ad4204b177ff7c67dde3a2b6285cfe5eeb66d25fda5fd29b1c9db05c0"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:3c69c4c7d34e77458e9c47041604d3bf7aeae667fd03c10bfa58472d8228efeb"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:b5166a117f976c9f5d3e13838c3381347bedeadf98ad71a9dce3bb3a7bbb1713"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:cf57f3b1f30b553dd7932ad22e906477a75c866b2e0fead6d76a19c8d96bda99"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:0204a815895347492a572eebaf46edb6cf77c3e062bce3949190bf152fa2d052"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/manifests/sha256:c52b63415681fc06dbbe3d0dbaa73d06690ff86215f7d9cdf99aff159ed370ef"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:145bff578aa2d1fc47a5e1c6147ff4f10bef170ba5c797020506d361c759e033"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:ccc35102bfea937106205e64cb04c4efd98b90359783d41934c4b22eb7e1e9f9"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:104e1909f2ece0d9b85dd16ec8cda64a94509d7efc6743a24fdca69c4f57a53b"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:cf19b1a375f8df0fd7af7d1c0c31b7d3d842ce607d2b0d0998d9ef9cf50958b6"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:d45f6adac690be30799c09c23fe88a37feaaafe9323a47f31a625e72733ecd32"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:9d9bc640632b74d8912d7ec761244ff6ada5642a793d5aa2af2906426526377f"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:55f3b0aaec240c4362cb93b681fd93bd7788b74fb8460f4ab3fe48b2af53eadd"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:e793753fbec35cbfc04e5dc6eebe1f4e012e0a252487a5b0a09ecf16f044c761"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:ed133b4658e6f964098d1c31462f8faed47a9adf4efa08ffdf5a914601457884"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:786ba12b9004a0a0d738b3feb5aa5862b5d5f4b5ae4df6f38769eb7a71d69808"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:f512f72b8bb1d0d4c573070a78d6e65d966d7d95b68a061719845f18549154dd"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:3474c95fe3ba5b57a422b6fc7780442bedaffc982410e2e09de5fa9f8050de4a"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:58163aaf3dcc99da58fffe490d1cf3048f2ed1efbfc0790c2a4e97aa991c4005"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:0fa574ca706cb937d8f58c5557bfd393a03c10370a2feef675544091f0263e4f"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:2221d205be28be1ba85914a3720ccf6f8330c89a2ca1c06ed51211bbcee10ab6"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:840b7e99fb829a18d0e268c50b7f6c66cc9c3e1d6ff09f9d86e8d25fa8850698"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:228553c2096a80a58a5c2301b0c86c3067de70c2186af5a0230d1bada2c11d82"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:ddfc9db35e2afcd231889ae63cb5cbdb04c2009fa255126f9f7713e1c9777c4c"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:724331d5d75e26e062240d1f62984b2db67f99804bf0217df5d9935ab0099b3f"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:cf2de391a5636baec5eb2e4912271e00b0527c943ea87c2fcc941cb6fa4bb067"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:ecf9e668ed7b6d9e39c5ac540b5fb1b8bba81b48e00094b2d422dd5e5bd676f0"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:6d71434bcea964b87c5b72cdc0142d941d1d75b30f14b04cfdddeb3f0b5dacb2"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:f8a453c264237b833391deb20d330676923300e1bb1953c7d761198e64e35109"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:f25f06d243ebd3d64f25aad3fbb9d18adce48e17d2a9b62bc52a1c32fdc8c59b"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:5e96a5f6d239a2fce95e96f6bad78470c461875aef92ddea9cb46fbe5b58347a"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:0923a561233aa94a11cb93225dce9bb4b8fda69d5ec6ba084c9dfb444320ed74"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:a6ce374b3cd9a6a366f58521f6a32c84345f45b351d259c2cdce6dae029c059e"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:e753527273b8cacdef1eec3a446225711af245b9b27ca3ddb769ea4bf25c07bb"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:f71cb4cc86ebeff859b223f4f0815a4739cd207e21182abd841a5569a246dea4"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:983facd454a0a164539d72a2d26ad14875c0f663da6cf7655748ab2cf4ba9b2f"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:ca411d6ac9fd954b266903b9c7a72093e0a708aaa4f87eadcc2a87d6337607b2"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:0c7e2d9999922d4270f84f6369d3a4b1494b9db986792b6314292e87662d1815"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:d21b9a8a678e0dfa3199766ff87480ff8c2b36cc06c2daf65caa9b5299b359b1"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:a9263d785f9812a5e3f2f543957c0789095be8ea84b6f35f8c934d153b6fc49e"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:3c3b27aff542f6596b99a982eddb0c1532ba05997b0579edec8fb05d8bb78880"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:e5b185f47e41f4aaa01a1ae10bd4049a4882a137f35768a9a3e952ffc3a6c2bb"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:107fc9ff0b0b6fc316d3b827af9923ed37de3afee7f4e2d61edffdb6876a77ba"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:aa6a8398741ebf5b27b5843d21f28f26c5663aba4002dfba22c9e81a066e40a9"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:909ba57754efa77c3da8ccbb5ccd8521ac4a924010a5c7f7a54f5e45c299f3bc"
+time="2023-01-23T19:02:23Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:0a93bab36f2fd4f406fca46c19c871c409bf9315fa8bfcb967a9d3224f199c74"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:a03cc8630eb12cd890ecc56468ce1333c94ea44cf2db079b2fc5dd73dd527c3c"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:7aa0c2b46a6802cf30f7c8633588b549aede0583f42cad8f63e878c308527522"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:f8d13c0cfdf92bc7626bd8a6bf83ac040a33b93227ce601d2cdc8463c0b50ee7"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:e87867768ff3fd80e1915c7d88f6ab5bd80c66f5c21abed6547725364868693e"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:e07f6e11951849331dee4867dbaa13371e0223a3f192e8d72cf8dbb5e6f53fcc"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:b2d47c0efdeeba78b9c08575db8244527c295059345c75a2c755947fa7108b03"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:dcfb250817a8279c4b7b03bd226ff14a45080dd88676774adb8d34aec9568157"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=debug msg="performing request method GET url https://ratifywustest.azurecr.io/v2/resource-1-5sigs100subjects/blobs/sha256:91cd99d4e3b11e3aa55375607aa8c6bff8e932d97fece78aaa7a9e0c95c20dce"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=debug msg="verification: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba: 1411ms"
+{
+  "isSuccess": true,
+  "verifierReports": [
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:ff3ba283d1e5cb6088a1fa833befb427b9158b7719dc10cb9237c48cea06d7ba",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    }
+  ]
+}
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+{
+  "isSuccess": true,
+  "verifierReports": [
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    }
+  ]
+}
+time="2023-01-23T19:02:24Z" level=debug msg="verification: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:56e343ff2bec5f63e7493d5ed9bce9f337bb8dd1a526273ca56823493fc3bc23: 1428ms"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=debug msg="verification: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080: 1442ms"
+{
+  "isSuccess": true,
+  "verifierReports": [
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:fa66803e5cd42a4d77b5c8aa90479cdb53bd25ef4fea117b1854de50ba81d080",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    }
+  ]
+}
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+{
+  "isSuccess": true,
+  "verifierReports": [
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    }
+  ]
+}
+time="2023-01-23T19:02:24Z" level=debug msg="verification: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:c3c4f591c2d5fd5f8a90a748165673e4e4b7a0e710ef5dc99b14323884ccd93a: 1451ms"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+{
+  "isSuccess": true,
+  "verifierReports": [
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    },
+    {
+      "subject": "ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54",
+      "isSuccess": true,
+      "name": "notaryv2",
+      "message": "signature verification success",
+      "extensions": {
+        "Issuer": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US",
+        "SN": "CN=dec-20-test,O=Notary,L=Seattle,ST=WA,C=US"
+      },
+      "artifactType": "application/vnd.cncf.notary.signature"
+    }
+  ]
+}
+time="2023-01-23T19:02:24Z" level=debug msg="verification: execution time for image ratifywustest.azurecr.io/resource-1-5sigs100subjects@sha256:66b3fb7c6789d1aa911ffe88bf7e94a0d6c71eda3dd283e6bd2492f2b83bfe54: 1484ms"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=info msg="1 notary verification certificates loaded from path '/usr/local/ratify-certs/notary/truststore'"
+time="2023-01-23T19:02:24Z" level=warning msg="Invalid path '/home/nonroot/.ratify/ratify-certs/notary/truststore' skipped, error lstat /home/nonroot/.ratify/ratify-certs/notary/truststore: no such file or directory"
+time="2023-01-23T19:02:24Z" level=info msg="0 notary verification certificates loaded from path '/home/nonroot/.ratify/ratify-certs/notary/truststore'"

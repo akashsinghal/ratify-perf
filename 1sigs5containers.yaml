@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: 1sigs5subjects
+  name: perf-deployment
+  namespace: demo
+spec:
+  replicas: 200
+  selector:
+      matchLabels:
+        app: 1sigs5subjects
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: 1sigs5subjects
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:1
+        name: resource-1-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:2
+        name: resource-1-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:3
+        name: resource-1-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:4
+        name: resource-1-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:5
+        name: resource-1-1sigs5subjects5
+        resources: {}
+status: {}
+

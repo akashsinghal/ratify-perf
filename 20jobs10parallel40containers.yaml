@@ -1,0 +1,2781 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-1
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-1-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:1
+        name: resource-1-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:2
+        name: resource-1-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:3
+        name: resource-1-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:4
+        name: resource-1-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:5
+        name: resource-1-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:6
+        name: resource-1-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:7
+        name: resource-1-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:8
+        name: resource-1-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:9
+        name: resource-1-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:10
+        name: resource-1-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:11
+        name: resource-1-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:12
+        name: resource-1-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:13
+        name: resource-1-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:14
+        name: resource-1-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:15
+        name: resource-1-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:16
+        name: resource-1-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:17
+        name: resource-1-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:18
+        name: resource-1-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:19
+        name: resource-1-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:20
+        name: resource-1-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:21
+        name: resource-1-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:22
+        name: resource-1-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:23
+        name: resource-1-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:24
+        name: resource-1-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:25
+        name: resource-1-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:26
+        name: resource-1-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:27
+        name: resource-1-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:28
+        name: resource-1-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:29
+        name: resource-1-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:30
+        name: resource-1-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:31
+        name: resource-1-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:32
+        name: resource-1-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:33
+        name: resource-1-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:34
+        name: resource-1-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:35
+        name: resource-1-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:36
+        name: resource-1-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:37
+        name: resource-1-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:38
+        name: resource-1-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:39
+        name: resource-1-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-5sigs40subjects:40
+        name: resource-1-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-2
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-2-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:1
+        name: resource-2-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:2
+        name: resource-2-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:3
+        name: resource-2-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:4
+        name: resource-2-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:5
+        name: resource-2-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:6
+        name: resource-2-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:7
+        name: resource-2-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:8
+        name: resource-2-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:9
+        name: resource-2-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:10
+        name: resource-2-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:11
+        name: resource-2-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:12
+        name: resource-2-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:13
+        name: resource-2-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:14
+        name: resource-2-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:15
+        name: resource-2-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:16
+        name: resource-2-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:17
+        name: resource-2-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:18
+        name: resource-2-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:19
+        name: resource-2-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:20
+        name: resource-2-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:21
+        name: resource-2-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:22
+        name: resource-2-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:23
+        name: resource-2-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:24
+        name: resource-2-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:25
+        name: resource-2-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:26
+        name: resource-2-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:27
+        name: resource-2-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:28
+        name: resource-2-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:29
+        name: resource-2-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:30
+        name: resource-2-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:31
+        name: resource-2-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:32
+        name: resource-2-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:33
+        name: resource-2-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:34
+        name: resource-2-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:35
+        name: resource-2-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:36
+        name: resource-2-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:37
+        name: resource-2-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:38
+        name: resource-2-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:39
+        name: resource-2-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-5sigs40subjects:40
+        name: resource-2-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-3
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-3-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:1
+        name: resource-3-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:2
+        name: resource-3-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:3
+        name: resource-3-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:4
+        name: resource-3-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:5
+        name: resource-3-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:6
+        name: resource-3-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:7
+        name: resource-3-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:8
+        name: resource-3-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:9
+        name: resource-3-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:10
+        name: resource-3-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:11
+        name: resource-3-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:12
+        name: resource-3-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:13
+        name: resource-3-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:14
+        name: resource-3-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:15
+        name: resource-3-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:16
+        name: resource-3-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:17
+        name: resource-3-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:18
+        name: resource-3-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:19
+        name: resource-3-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:20
+        name: resource-3-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:21
+        name: resource-3-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:22
+        name: resource-3-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:23
+        name: resource-3-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:24
+        name: resource-3-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:25
+        name: resource-3-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:26
+        name: resource-3-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:27
+        name: resource-3-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:28
+        name: resource-3-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:29
+        name: resource-3-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:30
+        name: resource-3-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:31
+        name: resource-3-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:32
+        name: resource-3-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:33
+        name: resource-3-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:34
+        name: resource-3-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:35
+        name: resource-3-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:36
+        name: resource-3-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:37
+        name: resource-3-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:38
+        name: resource-3-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:39
+        name: resource-3-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-5sigs40subjects:40
+        name: resource-3-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-4
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-4-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:1
+        name: resource-4-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:2
+        name: resource-4-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:3
+        name: resource-4-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:4
+        name: resource-4-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:5
+        name: resource-4-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:6
+        name: resource-4-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:7
+        name: resource-4-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:8
+        name: resource-4-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:9
+        name: resource-4-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:10
+        name: resource-4-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:11
+        name: resource-4-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:12
+        name: resource-4-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:13
+        name: resource-4-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:14
+        name: resource-4-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:15
+        name: resource-4-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:16
+        name: resource-4-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:17
+        name: resource-4-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:18
+        name: resource-4-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:19
+        name: resource-4-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:20
+        name: resource-4-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:21
+        name: resource-4-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:22
+        name: resource-4-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:23
+        name: resource-4-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:24
+        name: resource-4-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:25
+        name: resource-4-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:26
+        name: resource-4-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:27
+        name: resource-4-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:28
+        name: resource-4-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:29
+        name: resource-4-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:30
+        name: resource-4-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:31
+        name: resource-4-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:32
+        name: resource-4-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:33
+        name: resource-4-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:34
+        name: resource-4-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:35
+        name: resource-4-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:36
+        name: resource-4-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:37
+        name: resource-4-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:38
+        name: resource-4-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:39
+        name: resource-4-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-5sigs40subjects:40
+        name: resource-4-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-5
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-5-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:1
+        name: resource-5-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:2
+        name: resource-5-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:3
+        name: resource-5-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:4
+        name: resource-5-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:5
+        name: resource-5-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:6
+        name: resource-5-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:7
+        name: resource-5-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:8
+        name: resource-5-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:9
+        name: resource-5-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:10
+        name: resource-5-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:11
+        name: resource-5-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:12
+        name: resource-5-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:13
+        name: resource-5-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:14
+        name: resource-5-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:15
+        name: resource-5-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:16
+        name: resource-5-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:17
+        name: resource-5-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:18
+        name: resource-5-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:19
+        name: resource-5-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:20
+        name: resource-5-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:21
+        name: resource-5-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:22
+        name: resource-5-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:23
+        name: resource-5-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:24
+        name: resource-5-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:25
+        name: resource-5-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:26
+        name: resource-5-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:27
+        name: resource-5-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:28
+        name: resource-5-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:29
+        name: resource-5-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:30
+        name: resource-5-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:31
+        name: resource-5-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:32
+        name: resource-5-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:33
+        name: resource-5-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:34
+        name: resource-5-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:35
+        name: resource-5-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:36
+        name: resource-5-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:37
+        name: resource-5-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:38
+        name: resource-5-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:39
+        name: resource-5-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-5sigs40subjects:40
+        name: resource-5-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-6
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-6-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:1
+        name: resource-6-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:2
+        name: resource-6-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:3
+        name: resource-6-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:4
+        name: resource-6-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:5
+        name: resource-6-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:6
+        name: resource-6-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:7
+        name: resource-6-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:8
+        name: resource-6-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:9
+        name: resource-6-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:10
+        name: resource-6-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:11
+        name: resource-6-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:12
+        name: resource-6-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:13
+        name: resource-6-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:14
+        name: resource-6-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:15
+        name: resource-6-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:16
+        name: resource-6-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:17
+        name: resource-6-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:18
+        name: resource-6-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:19
+        name: resource-6-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:20
+        name: resource-6-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:21
+        name: resource-6-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:22
+        name: resource-6-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:23
+        name: resource-6-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:24
+        name: resource-6-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:25
+        name: resource-6-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:26
+        name: resource-6-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:27
+        name: resource-6-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:28
+        name: resource-6-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:29
+        name: resource-6-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:30
+        name: resource-6-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:31
+        name: resource-6-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:32
+        name: resource-6-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:33
+        name: resource-6-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:34
+        name: resource-6-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:35
+        name: resource-6-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:36
+        name: resource-6-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:37
+        name: resource-6-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:38
+        name: resource-6-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:39
+        name: resource-6-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-5sigs40subjects:40
+        name: resource-6-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-7
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-7-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:1
+        name: resource-7-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:2
+        name: resource-7-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:3
+        name: resource-7-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:4
+        name: resource-7-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:5
+        name: resource-7-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:6
+        name: resource-7-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:7
+        name: resource-7-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:8
+        name: resource-7-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:9
+        name: resource-7-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:10
+        name: resource-7-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:11
+        name: resource-7-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:12
+        name: resource-7-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:13
+        name: resource-7-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:14
+        name: resource-7-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:15
+        name: resource-7-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:16
+        name: resource-7-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:17
+        name: resource-7-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:18
+        name: resource-7-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:19
+        name: resource-7-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:20
+        name: resource-7-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:21
+        name: resource-7-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:22
+        name: resource-7-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:23
+        name: resource-7-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:24
+        name: resource-7-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:25
+        name: resource-7-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:26
+        name: resource-7-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:27
+        name: resource-7-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:28
+        name: resource-7-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:29
+        name: resource-7-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:30
+        name: resource-7-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:31
+        name: resource-7-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:32
+        name: resource-7-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:33
+        name: resource-7-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:34
+        name: resource-7-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:35
+        name: resource-7-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:36
+        name: resource-7-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:37
+        name: resource-7-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:38
+        name: resource-7-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:39
+        name: resource-7-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-5sigs40subjects:40
+        name: resource-7-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-8
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-8-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:1
+        name: resource-8-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:2
+        name: resource-8-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:3
+        name: resource-8-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:4
+        name: resource-8-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:5
+        name: resource-8-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:6
+        name: resource-8-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:7
+        name: resource-8-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:8
+        name: resource-8-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:9
+        name: resource-8-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:10
+        name: resource-8-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:11
+        name: resource-8-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:12
+        name: resource-8-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:13
+        name: resource-8-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:14
+        name: resource-8-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:15
+        name: resource-8-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:16
+        name: resource-8-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:17
+        name: resource-8-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:18
+        name: resource-8-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:19
+        name: resource-8-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:20
+        name: resource-8-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:21
+        name: resource-8-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:22
+        name: resource-8-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:23
+        name: resource-8-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:24
+        name: resource-8-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:25
+        name: resource-8-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:26
+        name: resource-8-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:27
+        name: resource-8-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:28
+        name: resource-8-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:29
+        name: resource-8-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:30
+        name: resource-8-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:31
+        name: resource-8-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:32
+        name: resource-8-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:33
+        name: resource-8-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:34
+        name: resource-8-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:35
+        name: resource-8-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:36
+        name: resource-8-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:37
+        name: resource-8-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:38
+        name: resource-8-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:39
+        name: resource-8-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-5sigs40subjects:40
+        name: resource-8-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-9
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-9-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:1
+        name: resource-9-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:2
+        name: resource-9-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:3
+        name: resource-9-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:4
+        name: resource-9-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:5
+        name: resource-9-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:6
+        name: resource-9-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:7
+        name: resource-9-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:8
+        name: resource-9-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:9
+        name: resource-9-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:10
+        name: resource-9-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:11
+        name: resource-9-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:12
+        name: resource-9-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:13
+        name: resource-9-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:14
+        name: resource-9-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:15
+        name: resource-9-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:16
+        name: resource-9-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:17
+        name: resource-9-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:18
+        name: resource-9-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:19
+        name: resource-9-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:20
+        name: resource-9-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:21
+        name: resource-9-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:22
+        name: resource-9-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:23
+        name: resource-9-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:24
+        name: resource-9-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:25
+        name: resource-9-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:26
+        name: resource-9-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:27
+        name: resource-9-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:28
+        name: resource-9-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:29
+        name: resource-9-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:30
+        name: resource-9-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:31
+        name: resource-9-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:32
+        name: resource-9-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:33
+        name: resource-9-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:34
+        name: resource-9-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:35
+        name: resource-9-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:36
+        name: resource-9-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:37
+        name: resource-9-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:38
+        name: resource-9-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:39
+        name: resource-9-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-5sigs40subjects:40
+        name: resource-9-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-10
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-10-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:1
+        name: resource-10-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:2
+        name: resource-10-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:3
+        name: resource-10-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:4
+        name: resource-10-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:5
+        name: resource-10-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:6
+        name: resource-10-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:7
+        name: resource-10-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:8
+        name: resource-10-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:9
+        name: resource-10-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:10
+        name: resource-10-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:11
+        name: resource-10-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:12
+        name: resource-10-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:13
+        name: resource-10-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:14
+        name: resource-10-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:15
+        name: resource-10-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:16
+        name: resource-10-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:17
+        name: resource-10-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:18
+        name: resource-10-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:19
+        name: resource-10-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:20
+        name: resource-10-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:21
+        name: resource-10-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:22
+        name: resource-10-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:23
+        name: resource-10-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:24
+        name: resource-10-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:25
+        name: resource-10-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:26
+        name: resource-10-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:27
+        name: resource-10-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:28
+        name: resource-10-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:29
+        name: resource-10-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:30
+        name: resource-10-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:31
+        name: resource-10-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:32
+        name: resource-10-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:33
+        name: resource-10-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:34
+        name: resource-10-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:35
+        name: resource-10-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:36
+        name: resource-10-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:37
+        name: resource-10-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:38
+        name: resource-10-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:39
+        name: resource-10-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-5sigs40subjects:40
+        name: resource-10-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-11
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-11-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:1
+        name: resource-11-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:2
+        name: resource-11-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:3
+        name: resource-11-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:4
+        name: resource-11-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:5
+        name: resource-11-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:6
+        name: resource-11-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:7
+        name: resource-11-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:8
+        name: resource-11-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:9
+        name: resource-11-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:10
+        name: resource-11-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:11
+        name: resource-11-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:12
+        name: resource-11-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:13
+        name: resource-11-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:14
+        name: resource-11-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:15
+        name: resource-11-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:16
+        name: resource-11-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:17
+        name: resource-11-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:18
+        name: resource-11-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:19
+        name: resource-11-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:20
+        name: resource-11-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:21
+        name: resource-11-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:22
+        name: resource-11-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:23
+        name: resource-11-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:24
+        name: resource-11-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:25
+        name: resource-11-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:26
+        name: resource-11-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:27
+        name: resource-11-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:28
+        name: resource-11-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:29
+        name: resource-11-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:30
+        name: resource-11-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:31
+        name: resource-11-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:32
+        name: resource-11-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:33
+        name: resource-11-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:34
+        name: resource-11-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:35
+        name: resource-11-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:36
+        name: resource-11-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:37
+        name: resource-11-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:38
+        name: resource-11-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:39
+        name: resource-11-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-5sigs40subjects:40
+        name: resource-11-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-12
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-12-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:1
+        name: resource-12-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:2
+        name: resource-12-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:3
+        name: resource-12-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:4
+        name: resource-12-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:5
+        name: resource-12-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:6
+        name: resource-12-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:7
+        name: resource-12-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:8
+        name: resource-12-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:9
+        name: resource-12-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:10
+        name: resource-12-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:11
+        name: resource-12-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:12
+        name: resource-12-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:13
+        name: resource-12-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:14
+        name: resource-12-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:15
+        name: resource-12-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:16
+        name: resource-12-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:17
+        name: resource-12-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:18
+        name: resource-12-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:19
+        name: resource-12-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:20
+        name: resource-12-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:21
+        name: resource-12-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:22
+        name: resource-12-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:23
+        name: resource-12-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:24
+        name: resource-12-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:25
+        name: resource-12-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:26
+        name: resource-12-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:27
+        name: resource-12-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:28
+        name: resource-12-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:29
+        name: resource-12-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:30
+        name: resource-12-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:31
+        name: resource-12-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:32
+        name: resource-12-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:33
+        name: resource-12-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:34
+        name: resource-12-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:35
+        name: resource-12-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:36
+        name: resource-12-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:37
+        name: resource-12-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:38
+        name: resource-12-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:39
+        name: resource-12-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-5sigs40subjects:40
+        name: resource-12-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-13
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-13-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:1
+        name: resource-13-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:2
+        name: resource-13-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:3
+        name: resource-13-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:4
+        name: resource-13-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:5
+        name: resource-13-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:6
+        name: resource-13-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:7
+        name: resource-13-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:8
+        name: resource-13-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:9
+        name: resource-13-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:10
+        name: resource-13-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:11
+        name: resource-13-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:12
+        name: resource-13-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:13
+        name: resource-13-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:14
+        name: resource-13-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:15
+        name: resource-13-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:16
+        name: resource-13-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:17
+        name: resource-13-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:18
+        name: resource-13-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:19
+        name: resource-13-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:20
+        name: resource-13-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:21
+        name: resource-13-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:22
+        name: resource-13-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:23
+        name: resource-13-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:24
+        name: resource-13-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:25
+        name: resource-13-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:26
+        name: resource-13-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:27
+        name: resource-13-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:28
+        name: resource-13-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:29
+        name: resource-13-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:30
+        name: resource-13-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:31
+        name: resource-13-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:32
+        name: resource-13-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:33
+        name: resource-13-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:34
+        name: resource-13-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:35
+        name: resource-13-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:36
+        name: resource-13-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:37
+        name: resource-13-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:38
+        name: resource-13-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:39
+        name: resource-13-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-5sigs40subjects:40
+        name: resource-13-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-14
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-14-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:1
+        name: resource-14-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:2
+        name: resource-14-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:3
+        name: resource-14-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:4
+        name: resource-14-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:5
+        name: resource-14-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:6
+        name: resource-14-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:7
+        name: resource-14-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:8
+        name: resource-14-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:9
+        name: resource-14-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:10
+        name: resource-14-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:11
+        name: resource-14-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:12
+        name: resource-14-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:13
+        name: resource-14-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:14
+        name: resource-14-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:15
+        name: resource-14-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:16
+        name: resource-14-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:17
+        name: resource-14-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:18
+        name: resource-14-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:19
+        name: resource-14-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:20
+        name: resource-14-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:21
+        name: resource-14-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:22
+        name: resource-14-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:23
+        name: resource-14-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:24
+        name: resource-14-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:25
+        name: resource-14-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:26
+        name: resource-14-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:27
+        name: resource-14-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:28
+        name: resource-14-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:29
+        name: resource-14-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:30
+        name: resource-14-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:31
+        name: resource-14-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:32
+        name: resource-14-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:33
+        name: resource-14-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:34
+        name: resource-14-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:35
+        name: resource-14-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:36
+        name: resource-14-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:37
+        name: resource-14-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:38
+        name: resource-14-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:39
+        name: resource-14-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-5sigs40subjects:40
+        name: resource-14-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-15
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-15-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:1
+        name: resource-15-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:2
+        name: resource-15-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:3
+        name: resource-15-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:4
+        name: resource-15-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:5
+        name: resource-15-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:6
+        name: resource-15-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:7
+        name: resource-15-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:8
+        name: resource-15-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:9
+        name: resource-15-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:10
+        name: resource-15-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:11
+        name: resource-15-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:12
+        name: resource-15-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:13
+        name: resource-15-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:14
+        name: resource-15-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:15
+        name: resource-15-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:16
+        name: resource-15-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:17
+        name: resource-15-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:18
+        name: resource-15-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:19
+        name: resource-15-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:20
+        name: resource-15-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:21
+        name: resource-15-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:22
+        name: resource-15-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:23
+        name: resource-15-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:24
+        name: resource-15-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:25
+        name: resource-15-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:26
+        name: resource-15-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:27
+        name: resource-15-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:28
+        name: resource-15-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:29
+        name: resource-15-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:30
+        name: resource-15-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:31
+        name: resource-15-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:32
+        name: resource-15-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:33
+        name: resource-15-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:34
+        name: resource-15-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:35
+        name: resource-15-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:36
+        name: resource-15-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:37
+        name: resource-15-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:38
+        name: resource-15-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:39
+        name: resource-15-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-5sigs40subjects:40
+        name: resource-15-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-16
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-16-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:1
+        name: resource-16-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:2
+        name: resource-16-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:3
+        name: resource-16-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:4
+        name: resource-16-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:5
+        name: resource-16-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:6
+        name: resource-16-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:7
+        name: resource-16-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:8
+        name: resource-16-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:9
+        name: resource-16-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:10
+        name: resource-16-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:11
+        name: resource-16-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:12
+        name: resource-16-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:13
+        name: resource-16-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:14
+        name: resource-16-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:15
+        name: resource-16-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:16
+        name: resource-16-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:17
+        name: resource-16-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:18
+        name: resource-16-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:19
+        name: resource-16-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:20
+        name: resource-16-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:21
+        name: resource-16-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:22
+        name: resource-16-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:23
+        name: resource-16-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:24
+        name: resource-16-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:25
+        name: resource-16-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:26
+        name: resource-16-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:27
+        name: resource-16-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:28
+        name: resource-16-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:29
+        name: resource-16-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:30
+        name: resource-16-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:31
+        name: resource-16-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:32
+        name: resource-16-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:33
+        name: resource-16-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:34
+        name: resource-16-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:35
+        name: resource-16-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:36
+        name: resource-16-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:37
+        name: resource-16-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:38
+        name: resource-16-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:39
+        name: resource-16-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-5sigs40subjects:40
+        name: resource-16-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-17
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-17-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:1
+        name: resource-17-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:2
+        name: resource-17-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:3
+        name: resource-17-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:4
+        name: resource-17-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:5
+        name: resource-17-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:6
+        name: resource-17-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:7
+        name: resource-17-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:8
+        name: resource-17-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:9
+        name: resource-17-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:10
+        name: resource-17-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:11
+        name: resource-17-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:12
+        name: resource-17-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:13
+        name: resource-17-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:14
+        name: resource-17-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:15
+        name: resource-17-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:16
+        name: resource-17-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:17
+        name: resource-17-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:18
+        name: resource-17-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:19
+        name: resource-17-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:20
+        name: resource-17-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:21
+        name: resource-17-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:22
+        name: resource-17-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:23
+        name: resource-17-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:24
+        name: resource-17-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:25
+        name: resource-17-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:26
+        name: resource-17-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:27
+        name: resource-17-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:28
+        name: resource-17-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:29
+        name: resource-17-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:30
+        name: resource-17-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:31
+        name: resource-17-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:32
+        name: resource-17-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:33
+        name: resource-17-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:34
+        name: resource-17-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:35
+        name: resource-17-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:36
+        name: resource-17-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:37
+        name: resource-17-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:38
+        name: resource-17-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:39
+        name: resource-17-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-5sigs40subjects:40
+        name: resource-17-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-18
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-18-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:1
+        name: resource-18-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:2
+        name: resource-18-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:3
+        name: resource-18-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:4
+        name: resource-18-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:5
+        name: resource-18-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:6
+        name: resource-18-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:7
+        name: resource-18-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:8
+        name: resource-18-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:9
+        name: resource-18-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:10
+        name: resource-18-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:11
+        name: resource-18-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:12
+        name: resource-18-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:13
+        name: resource-18-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:14
+        name: resource-18-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:15
+        name: resource-18-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:16
+        name: resource-18-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:17
+        name: resource-18-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:18
+        name: resource-18-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:19
+        name: resource-18-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:20
+        name: resource-18-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:21
+        name: resource-18-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:22
+        name: resource-18-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:23
+        name: resource-18-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:24
+        name: resource-18-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:25
+        name: resource-18-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:26
+        name: resource-18-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:27
+        name: resource-18-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:28
+        name: resource-18-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:29
+        name: resource-18-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:30
+        name: resource-18-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:31
+        name: resource-18-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:32
+        name: resource-18-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:33
+        name: resource-18-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:34
+        name: resource-18-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:35
+        name: resource-18-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:36
+        name: resource-18-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:37
+        name: resource-18-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:38
+        name: resource-18-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:39
+        name: resource-18-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-5sigs40subjects:40
+        name: resource-18-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-19
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-19-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:1
+        name: resource-19-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:2
+        name: resource-19-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:3
+        name: resource-19-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:4
+        name: resource-19-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:5
+        name: resource-19-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:6
+        name: resource-19-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:7
+        name: resource-19-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:8
+        name: resource-19-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:9
+        name: resource-19-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:10
+        name: resource-19-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:11
+        name: resource-19-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:12
+        name: resource-19-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:13
+        name: resource-19-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:14
+        name: resource-19-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:15
+        name: resource-19-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:16
+        name: resource-19-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:17
+        name: resource-19-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:18
+        name: resource-19-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:19
+        name: resource-19-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:20
+        name: resource-19-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:21
+        name: resource-19-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:22
+        name: resource-19-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:23
+        name: resource-19-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:24
+        name: resource-19-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:25
+        name: resource-19-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:26
+        name: resource-19-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:27
+        name: resource-19-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:28
+        name: resource-19-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:29
+        name: resource-19-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:30
+        name: resource-19-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:31
+        name: resource-19-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:32
+        name: resource-19-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:33
+        name: resource-19-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:34
+        name: resource-19-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:35
+        name: resource-19-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:36
+        name: resource-19-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:37
+        name: resource-19-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:38
+        name: resource-19-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:39
+        name: resource-19-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-5sigs40subjects:40
+        name: resource-19-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-20
+  namespace: demo
+spec:
+  parallelism: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-20-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:1
+        name: resource-20-5sigs40subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:2
+        name: resource-20-5sigs40subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:3
+        name: resource-20-5sigs40subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:4
+        name: resource-20-5sigs40subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:5
+        name: resource-20-5sigs40subjects5
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:6
+        name: resource-20-5sigs40subjects6
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:7
+        name: resource-20-5sigs40subjects7
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:8
+        name: resource-20-5sigs40subjects8
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:9
+        name: resource-20-5sigs40subjects9
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:10
+        name: resource-20-5sigs40subjects10
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:11
+        name: resource-20-5sigs40subjects11
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:12
+        name: resource-20-5sigs40subjects12
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:13
+        name: resource-20-5sigs40subjects13
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:14
+        name: resource-20-5sigs40subjects14
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:15
+        name: resource-20-5sigs40subjects15
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:16
+        name: resource-20-5sigs40subjects16
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:17
+        name: resource-20-5sigs40subjects17
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:18
+        name: resource-20-5sigs40subjects18
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:19
+        name: resource-20-5sigs40subjects19
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:20
+        name: resource-20-5sigs40subjects20
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:21
+        name: resource-20-5sigs40subjects21
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:22
+        name: resource-20-5sigs40subjects22
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:23
+        name: resource-20-5sigs40subjects23
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:24
+        name: resource-20-5sigs40subjects24
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:25
+        name: resource-20-5sigs40subjects25
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:26
+        name: resource-20-5sigs40subjects26
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:27
+        name: resource-20-5sigs40subjects27
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:28
+        name: resource-20-5sigs40subjects28
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:29
+        name: resource-20-5sigs40subjects29
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:30
+        name: resource-20-5sigs40subjects30
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:31
+        name: resource-20-5sigs40subjects31
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:32
+        name: resource-20-5sigs40subjects32
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:33
+        name: resource-20-5sigs40subjects33
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:34
+        name: resource-20-5sigs40subjects34
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:35
+        name: resource-20-5sigs40subjects35
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:36
+        name: resource-20-5sigs40subjects36
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:37
+        name: resource-20-5sigs40subjects37
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:38
+        name: resource-20-5sigs40subjects38
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:39
+        name: resource-20-5sigs40subjects39
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-5sigs40subjects:40
+        name: resource-20-5sigs40subjects40
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+

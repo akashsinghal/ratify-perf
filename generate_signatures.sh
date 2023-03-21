@@ -33,12 +33,12 @@ fi
 docker login ${registry}.azurecr.io -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD}
 
 # for each resource
-for ((m=1;m<=${num_resources};m++)); do
+for ((m=20;m<=${num_resources};m++)); do
   repo="resource-${m}-${num_sigs}sigs${num_subjects}subjects"
   # for each subject
   for ((i=1;i<=${num_subjects};i++)); do
     # build a unique scratch dockerfile and build image
-    echo $'FROM scratch\nCMD ["echo", "image '${i}'"]' > Dockerfile
+    echo $'FROM scratch\nCMD ["echo", "repository '${repo}' image '${i}'"]' > Dockerfile
     docker build . -t ${registry}.azurecr.io/${repo}:${i}
     # push new image to specified registry, repo, and tag
     docker push ${registry}.azurecr.io/${repo}:${i}
@@ -48,7 +48,7 @@ for ((m=1;m<=${num_resources};m++)); do
     # add specified number of signatures
     sleep 2s
     for ((j=1;j<=${num_sigs};j++)); do
-        notation sign -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD} ${registry}.azurecr.io/${repo}:${i}
+        notation sign --signature-format cose --key wabbit-networks-io -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD} ${registry}.azurecr.io/${repo}:${i}
     done
   done
 done

@@ -18,10 +18,12 @@ func main() {
 	resourceType := "job"
 	namespace := "demo"
 	numPods := 40
-	numJobs := 40
-	numReplicas := int32(1)
-	numContainers := 5
-	imageName := "1sigs5subjects"
+	numJobs := 20
+	jobParallelism := new(int32)
+	*jobParallelism = int32(5)
+	numReplicas := int32(200)
+	numContainers := 10
+	imageName := "5sigs40subjects"
 	addImagePrefix := true
 	registryName := "artifactstest.azurecr.io"
 	switch resourceType {
@@ -38,7 +40,7 @@ func main() {
 		}
 		fmt.Println(templateString)
 	case "job":
-		templateString, err := createJobs(namespace, numJobs, numContainers, imageName, registryName, addImagePrefix)
+		templateString, err := createJobs(namespace, numJobs, jobParallelism, numContainers, imageName, registryName, addImagePrefix)
 		if err != nil {
 			panic(err)
 		}
@@ -63,7 +65,7 @@ func createDeployment(numReplicas *int32, numContainers int, imageName string, r
 		},
 		ObjectMeta: metav1.ObjectMeta{
 			Name:      "perf-deployment",
-			Namespace: "governed",
+			Namespace: "demo",
 		},
 		Spec: appsv1.DeploymentSpec{
 			Replicas: numReplicas,
@@ -124,7 +126,7 @@ func createPods(namespace string, numPods int, numContainers int, imageName stri
 	return retTemplate, nil
 }
 
-func createJob(namespace string, jobName string, numContainers int, imageName string, registryName string) *batchv1.Job {
+func createJob(namespace string, jobName string, jobParallelism *int32, numContainers int, imageName string, registryName string) *batchv1.Job {
 	containers := make([]corev1.Container, numContainers)
 	for i := 0; i < numContainers; i++ {
 		containers[i] = corev1.Container{
@@ -152,11 +154,12 @@ func createJob(namespace string, jobName string, numContainers int, imageName st
 					RestartPolicy: corev1.RestartPolicyOnFailure,
 				},
 			},
+			Parallelism: jobParallelism,
 		},
 	}
 }
 
-func createJobs(namespace string, numJobs int, numContainers int, imageName string, registryName string, addImagePrefix bool) (string, error) {
+func createJobs(namespace string, numJobs int, jobParallelism *int32, numContainers int, imageName string, registryName string, addImagePrefix bool) (string, error) {
 
 	var jobSpec *batchv1.Job
 	retTemplate := ""
@@ -165,7 +168,7 @@ func createJobs(namespace string, numJobs int, numContainers int, imageName stri
 		if addImagePrefix {
 			scopedImageName = fmt.Sprintf("%s-%d-%s", imagePrefix, i, imageName)
 		}
-		jobSpec = createJob(namespace, fmt.Sprintf("test-job-%d", i), numContainers, scopedImageName, registryName)
+		jobSpec = createJob(namespace, fmt.Sprintf("test-job-%d", i), jobParallelism, numContainers, scopedImageName, registryName)
 		bytes, err := yaml.Marshal(jobSpec)
 		if err != nil {
 			return "", fmt.Errorf("failed to create job %d: %v", i, err)

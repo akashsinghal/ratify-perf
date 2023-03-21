@@ -1,30 +1,70 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: perf-deployment
-  namespace: governed
   labels:
-    app: 1tag75sigs
+    app: 10sigs1subjects
+  name: perf-deployment
+  namespace: demo
 spec:
-  replicas: 10000
+  replicas: 1000
   selector:
     matchLabels:
-      app: 1tag150sigs
+      app: 10sigs1subjects
+  strategy: {}
   template:
     metadata:
       labels:
-        app: 1tag150sigs
+        app: 10sigs1subjects
     spec:
       containers:
-      - name: 1tag150sigs
-        image: addonregistry.azurecr.io/1tag150sigs:latest
-        securityContext:
-          runAsNonRoot: true
-          readOnlyRootFilesystem: true
-        resources:
-          requests:
-            memory: 1k
-            cpu: 10m
-          limits:
-            memory: 1k
-            cpu: 10m
+      - name: 10sigs1subjects
+        image: artifactstest.azurecr.io/10sigs1subjects:1
+status: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: 10sigs1subjects
+  name: perf-deployment2
+  namespace: demo
+spec:
+  replicas: 1000
+  selector:
+    matchLabels:
+      app: 10sigs1subjects
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: 10sigs1subjects
+    spec:
+      containers:
+      - name: 10sigs1subjects
+        image: artifactstest.azurecr.io/10sigs1subjects:1
+status: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: 10sigs1subjects
+  name: perf-deployment3
+  namespace: demo
+spec:
+  replicas: 1000
+  selector:
+    matchLabels:
+      app: 10sigs1subjects
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: 10sigs1subjects
+    spec:
+      containers:
+      - name: 10sigs1subjects
+        image: artifactstest.azurecr.io/10sigs1subjects:1
+status: {}

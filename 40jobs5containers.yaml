@@ -1,0 +1,1321 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-1
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-1-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:1
+        name: resource-1-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:2
+        name: resource-1-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:3
+        name: resource-1-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:4
+        name: resource-1-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-1-1sigs5subjects:5
+        name: resource-1-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-2
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-2-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-2-1sigs5subjects:1
+        name: resource-2-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-1sigs5subjects:2
+        name: resource-2-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-1sigs5subjects:3
+        name: resource-2-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-1sigs5subjects:4
+        name: resource-2-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-2-1sigs5subjects:5
+        name: resource-2-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-3
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-3-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-3-1sigs5subjects:1
+        name: resource-3-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-1sigs5subjects:2
+        name: resource-3-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-1sigs5subjects:3
+        name: resource-3-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-1sigs5subjects:4
+        name: resource-3-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-3-1sigs5subjects:5
+        name: resource-3-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-4
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-4-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-4-1sigs5subjects:1
+        name: resource-4-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-1sigs5subjects:2
+        name: resource-4-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-1sigs5subjects:3
+        name: resource-4-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-1sigs5subjects:4
+        name: resource-4-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-4-1sigs5subjects:5
+        name: resource-4-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-5
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-5-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-5-1sigs5subjects:1
+        name: resource-5-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-1sigs5subjects:2
+        name: resource-5-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-1sigs5subjects:3
+        name: resource-5-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-1sigs5subjects:4
+        name: resource-5-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-5-1sigs5subjects:5
+        name: resource-5-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-6
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-6-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-6-1sigs5subjects:1
+        name: resource-6-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-1sigs5subjects:2
+        name: resource-6-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-1sigs5subjects:3
+        name: resource-6-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-1sigs5subjects:4
+        name: resource-6-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-6-1sigs5subjects:5
+        name: resource-6-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-7
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-7-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-7-1sigs5subjects:1
+        name: resource-7-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-1sigs5subjects:2
+        name: resource-7-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-1sigs5subjects:3
+        name: resource-7-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-1sigs5subjects:4
+        name: resource-7-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-7-1sigs5subjects:5
+        name: resource-7-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-8
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-8-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-8-1sigs5subjects:1
+        name: resource-8-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-1sigs5subjects:2
+        name: resource-8-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-1sigs5subjects:3
+        name: resource-8-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-1sigs5subjects:4
+        name: resource-8-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-8-1sigs5subjects:5
+        name: resource-8-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-9
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-9-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-9-1sigs5subjects:1
+        name: resource-9-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-1sigs5subjects:2
+        name: resource-9-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-1sigs5subjects:3
+        name: resource-9-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-1sigs5subjects:4
+        name: resource-9-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-9-1sigs5subjects:5
+        name: resource-9-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-10
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-10-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-10-1sigs5subjects:1
+        name: resource-10-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-1sigs5subjects:2
+        name: resource-10-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-1sigs5subjects:3
+        name: resource-10-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-1sigs5subjects:4
+        name: resource-10-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-10-1sigs5subjects:5
+        name: resource-10-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-11
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-11-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-11-1sigs5subjects:1
+        name: resource-11-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-1sigs5subjects:2
+        name: resource-11-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-1sigs5subjects:3
+        name: resource-11-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-1sigs5subjects:4
+        name: resource-11-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-11-1sigs5subjects:5
+        name: resource-11-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-12
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-12-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-12-1sigs5subjects:1
+        name: resource-12-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-1sigs5subjects:2
+        name: resource-12-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-1sigs5subjects:3
+        name: resource-12-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-1sigs5subjects:4
+        name: resource-12-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-12-1sigs5subjects:5
+        name: resource-12-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-13
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-13-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-13-1sigs5subjects:1
+        name: resource-13-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-1sigs5subjects:2
+        name: resource-13-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-1sigs5subjects:3
+        name: resource-13-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-1sigs5subjects:4
+        name: resource-13-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-13-1sigs5subjects:5
+        name: resource-13-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-14
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-14-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-14-1sigs5subjects:1
+        name: resource-14-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-1sigs5subjects:2
+        name: resource-14-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-1sigs5subjects:3
+        name: resource-14-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-1sigs5subjects:4
+        name: resource-14-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-14-1sigs5subjects:5
+        name: resource-14-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-15
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-15-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-15-1sigs5subjects:1
+        name: resource-15-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-1sigs5subjects:2
+        name: resource-15-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-1sigs5subjects:3
+        name: resource-15-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-1sigs5subjects:4
+        name: resource-15-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-15-1sigs5subjects:5
+        name: resource-15-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-16
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-16-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-16-1sigs5subjects:1
+        name: resource-16-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-1sigs5subjects:2
+        name: resource-16-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-1sigs5subjects:3
+        name: resource-16-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-1sigs5subjects:4
+        name: resource-16-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-16-1sigs5subjects:5
+        name: resource-16-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-17
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-17-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-17-1sigs5subjects:1
+        name: resource-17-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-1sigs5subjects:2
+        name: resource-17-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-1sigs5subjects:3
+        name: resource-17-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-1sigs5subjects:4
+        name: resource-17-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-17-1sigs5subjects:5
+        name: resource-17-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-18
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-18-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-18-1sigs5subjects:1
+        name: resource-18-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-1sigs5subjects:2
+        name: resource-18-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-1sigs5subjects:3
+        name: resource-18-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-1sigs5subjects:4
+        name: resource-18-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-18-1sigs5subjects:5
+        name: resource-18-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-19
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-19-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-19-1sigs5subjects:1
+        name: resource-19-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-1sigs5subjects:2
+        name: resource-19-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-1sigs5subjects:3
+        name: resource-19-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-1sigs5subjects:4
+        name: resource-19-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-19-1sigs5subjects:5
+        name: resource-19-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-20
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-20-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-20-1sigs5subjects:1
+        name: resource-20-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-1sigs5subjects:2
+        name: resource-20-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-1sigs5subjects:3
+        name: resource-20-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-1sigs5subjects:4
+        name: resource-20-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-20-1sigs5subjects:5
+        name: resource-20-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-21
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-21-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-21-1sigs5subjects:1
+        name: resource-21-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-21-1sigs5subjects:2
+        name: resource-21-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-21-1sigs5subjects:3
+        name: resource-21-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-21-1sigs5subjects:4
+        name: resource-21-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-21-1sigs5subjects:5
+        name: resource-21-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-22
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-22-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-22-1sigs5subjects:1
+        name: resource-22-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-22-1sigs5subjects:2
+        name: resource-22-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-22-1sigs5subjects:3
+        name: resource-22-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-22-1sigs5subjects:4
+        name: resource-22-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-22-1sigs5subjects:5
+        name: resource-22-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-23
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-23-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-23-1sigs5subjects:1
+        name: resource-23-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-23-1sigs5subjects:2
+        name: resource-23-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-23-1sigs5subjects:3
+        name: resource-23-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-23-1sigs5subjects:4
+        name: resource-23-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-23-1sigs5subjects:5
+        name: resource-23-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-24
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-24-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-24-1sigs5subjects:1
+        name: resource-24-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-24-1sigs5subjects:2
+        name: resource-24-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-24-1sigs5subjects:3
+        name: resource-24-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-24-1sigs5subjects:4
+        name: resource-24-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-24-1sigs5subjects:5
+        name: resource-24-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-25
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-25-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-25-1sigs5subjects:1
+        name: resource-25-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-25-1sigs5subjects:2
+        name: resource-25-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-25-1sigs5subjects:3
+        name: resource-25-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-25-1sigs5subjects:4
+        name: resource-25-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-25-1sigs5subjects:5
+        name: resource-25-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-26
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-26-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-26-1sigs5subjects:1
+        name: resource-26-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-26-1sigs5subjects:2
+        name: resource-26-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-26-1sigs5subjects:3
+        name: resource-26-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-26-1sigs5subjects:4
+        name: resource-26-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-26-1sigs5subjects:5
+        name: resource-26-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-27
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-27-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-27-1sigs5subjects:1
+        name: resource-27-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-27-1sigs5subjects:2
+        name: resource-27-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-27-1sigs5subjects:3
+        name: resource-27-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-27-1sigs5subjects:4
+        name: resource-27-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-27-1sigs5subjects:5
+        name: resource-27-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-28
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-28-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-28-1sigs5subjects:1
+        name: resource-28-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-28-1sigs5subjects:2
+        name: resource-28-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-28-1sigs5subjects:3
+        name: resource-28-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-28-1sigs5subjects:4
+        name: resource-28-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-28-1sigs5subjects:5
+        name: resource-28-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-29
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-29-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-29-1sigs5subjects:1
+        name: resource-29-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-29-1sigs5subjects:2
+        name: resource-29-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-29-1sigs5subjects:3
+        name: resource-29-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-29-1sigs5subjects:4
+        name: resource-29-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-29-1sigs5subjects:5
+        name: resource-29-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-30
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-30-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-30-1sigs5subjects:1
+        name: resource-30-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-30-1sigs5subjects:2
+        name: resource-30-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-30-1sigs5subjects:3
+        name: resource-30-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-30-1sigs5subjects:4
+        name: resource-30-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-30-1sigs5subjects:5
+        name: resource-30-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-31
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-31-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-31-1sigs5subjects:1
+        name: resource-31-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-31-1sigs5subjects:2
+        name: resource-31-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-31-1sigs5subjects:3
+        name: resource-31-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-31-1sigs5subjects:4
+        name: resource-31-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-31-1sigs5subjects:5
+        name: resource-31-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-32
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-32-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-32-1sigs5subjects:1
+        name: resource-32-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-32-1sigs5subjects:2
+        name: resource-32-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-32-1sigs5subjects:3
+        name: resource-32-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-32-1sigs5subjects:4
+        name: resource-32-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-32-1sigs5subjects:5
+        name: resource-32-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-33
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-33-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-33-1sigs5subjects:1
+        name: resource-33-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-33-1sigs5subjects:2
+        name: resource-33-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-33-1sigs5subjects:3
+        name: resource-33-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-33-1sigs5subjects:4
+        name: resource-33-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-33-1sigs5subjects:5
+        name: resource-33-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-34
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-34-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-34-1sigs5subjects:1
+        name: resource-34-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-34-1sigs5subjects:2
+        name: resource-34-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-34-1sigs5subjects:3
+        name: resource-34-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-34-1sigs5subjects:4
+        name: resource-34-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-34-1sigs5subjects:5
+        name: resource-34-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-35
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-35-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-35-1sigs5subjects:1
+        name: resource-35-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-35-1sigs5subjects:2
+        name: resource-35-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-35-1sigs5subjects:3
+        name: resource-35-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-35-1sigs5subjects:4
+        name: resource-35-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-35-1sigs5subjects:5
+        name: resource-35-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-36
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-36-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-36-1sigs5subjects:1
+        name: resource-36-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-36-1sigs5subjects:2
+        name: resource-36-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-36-1sigs5subjects:3
+        name: resource-36-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-36-1sigs5subjects:4
+        name: resource-36-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-36-1sigs5subjects:5
+        name: resource-36-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-37
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-37-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-37-1sigs5subjects:1
+        name: resource-37-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-37-1sigs5subjects:2
+        name: resource-37-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-37-1sigs5subjects:3
+        name: resource-37-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-37-1sigs5subjects:4
+        name: resource-37-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-37-1sigs5subjects:5
+        name: resource-37-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-38
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-38-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-38-1sigs5subjects:1
+        name: resource-38-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-38-1sigs5subjects:2
+        name: resource-38-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-38-1sigs5subjects:3
+        name: resource-38-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-38-1sigs5subjects:4
+        name: resource-38-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-38-1sigs5subjects:5
+        name: resource-38-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-39
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-39-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-39-1sigs5subjects:1
+        name: resource-39-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-39-1sigs5subjects:2
+        name: resource-39-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-39-1sigs5subjects:3
+        name: resource-39-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-39-1sigs5subjects:4
+        name: resource-39-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-39-1sigs5subjects:5
+        name: resource-39-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: test-job-40
+  namespace: demo
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      name: test-job-40-pod
+      namespace: demo
+    spec:
+      containers:
+      - image: artifactstest.azurecr.io/resource-40-1sigs5subjects:1
+        name: resource-40-1sigs5subjects1
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-40-1sigs5subjects:2
+        name: resource-40-1sigs5subjects2
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-40-1sigs5subjects:3
+        name: resource-40-1sigs5subjects3
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-40-1sigs5subjects:4
+        name: resource-40-1sigs5subjects4
+        resources: {}
+      - image: artifactstest.azurecr.io/resource-40-1sigs5subjects:5
+        name: resource-40-1sigs5subjects5
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+
+---
+
